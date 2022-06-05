@@ -1,0 +1,164 @@
+body{
+
+    background: white;
+
+    color: white;
+
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+    box-sizing: border-box;
+
+    margin: 0;
+
+    padding: 0;
+
+}
+
+.container{
+
+    display: grid;
+
+    grid-template-areas: 'header header header' 'quote picture picture' 'timeline timeline timeline' 'footer footer footer' ;
+
+    row-gap: 5px;
+
+    column-gap: 5px;
+
+    list-style-type: none;
+
+
+
+}
+
+.container>div{
+
+    background:black;
+
+    text-align: center;
+
+    color: white;
+
+    display: flex;
+
+}
+
+#header{
+
+grid-area: header;
+
+flex-direction: row-reverse;
+
+justify-content: flex-end;
+
+background: black;
+
+}
+
+#header>img{
+
+align-self: center;
+
+}
+
+#quote{
+
+    grid-area: quote;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+    font-weight: 400;
+
+    font-size: 1.5rem;
+
+    background-color: white;
+
+    color: black;
+
+    font-family: 'Courier New', Courier, monospace;
+
+}
+
+#img-div{
+
+    grid-area: picture;
+
+}
+
+#img-div >img{
+
+    max-width:100%;
+
+    height:auto;
+
+}
+
+#timeline{
+
+    grid-area: timeline;
+
+    background: white;
+
+    color: black;
+
+}
+
+#timeline h1{
+
+    transform: rotate(270deg);
+
+    padding: 1rem;
+
+    font-size: 4em;
+
+    text-transform: uppercase;
+
+    align-self: center;
+
+}
+
+dl{
+
+    display: grid;
+
+    grid-template-columns:25px auto;
+
+    grid-template-rows: repeat(11) auto;
+
+    row-gap: 10px;
+
+}
+
+dd{
+
+    justify-self: start;
+
+    text-align: left;
+
+}
+
+dt{
+
+    align-self: center;
+
+    font-weight: 700;
+
+    text-align: right;
+
+
+
+}
+
+
+
+
+
+#footer{
+
+    grid-area: footer;
+
+    justify-content: center;
+
+}
+
